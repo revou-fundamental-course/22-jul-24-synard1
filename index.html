@@ -1,0 +1,180 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agent Bumi Langit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <h1>Your Trusted Travel Agent's</h1>
+        <h2>Travel Agent Bumi Langit</h2>
+    </header>
+
+    <!-- navigation -->
+    <aside>
+        <nav>
+            <a href="#">Home</a> |
+            <a href="#package">Package</a> |
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </aside>
+    
+    <!-- main -->
+    <div class="slider-container">
+        <div class="slides" id="slides">
+            <div class="slide active">
+                <img src="assets/slide1.jpeg" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="assets/slide2.jpeg" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="assets/slide3.jpeg" alt="Slide 3">
+            </div>
+        </div>
+    </div>
+
+    <hr style="border: black solid 1px;">
+
+    <div class="row">
+        <!-- Begin Information -->
+        <div class="col card" id="information">
+            <h2>Travel Agent Bumi Langit</h2>
+            <p style="text-align: justify;">
+            Bosan dengan liburan yang biasa-biasa saja? Kami, <b>Travel Agent Bumi Langit</b>, mengajak Anda merasakan pengalaman Indonesia yang sesungguhnya.
+            </p>
+            <p style="text-align: left;">
+                Apa yang Membuat Kami Berbeda:<br>
+                <ul>
+                    <li style="text-align: left;"><u>Kemitraan dengan Masyarakat Lokal</u><br> Kami bekerja sama dengan penduduk setempat untuk merancang perjalanan yang mendukung komunitas lokal dan melestarikan budaya.
+                    </li>
+                    <li style="text-align: left;"><u>Destinasi Tersembunyi</u><br> Lupakan Bali yang ramai. Kami akan membawa Anda ke desa-desa terpencil, pasar tradisional yang semarak, dan tempat-tempat yang jarang dikunjungi wisatawan.
+                    </li>
+                    <li style="text-align: left;"><u>Aktivitas Otentik</u><br> Pelajari membatik dari pengrajin, masak hidangan khas bersama ibu-ibu desa, atau ikuti upacara adat yang sakral.
+                    </li>
+                    <li style="text-align: left;">
+                        <u>Penginapan Unik</u><br>Tinggal di homestay tradisional, merasakan keramahan penduduk setempat, dan menikmati hidangan rumahan yang lezat.
+
+                    </li>
+                </ul>
+            </p>
+        </div>
+        <!-- End Information -->
+
+        <!-- Begin Testimonial -->
+        <div class="col card" id="testimonial">
+            <div class="testimonial-container" id="testimonialContainer">
+                <div class="testimonial">
+                    <h2>Testimonial</h2>
+                    <img id="gravatar-image" data-email="suep@example.com" alt="Suep Avatar" src="https://www.gravatar.com/avatar/{{ md5(strtolower(trim('suep@example.com'))) }}?d=identicon&s=200">
+                    <p>"Perjalanan yang menarik"</p>
+                    <p class="author">- Suep</p>
+                </div>
+                <div class="testimonial">
+                    <h2>Testimonial</h2>
+                    <img id="gravatar-image" data-email="hindun@example.com" alt="Hindun Avatar" src="https://www.gravatar.com/avatar/{{ md5(strtolower(trim('hindun@example.com'))) }}?d=mp&s=200">
+                    <p>"Perjalanan yang luar biasa"</p>
+                    <p class="author">- Hindun</p>
+                </div>
+            </div>
+        </div>
+        <!-- End Testimonial -->
+    </div>
+
+    <p style="text-align: center;" id="package" class="package">~ Our Packages~ </p>
+
+    <div class="row">
+        <div class="col card">
+            Paket Basic
+            <ul style="text-align: left;">
+                <li>3D 2N</li>
+                <li>Termasuk Makan 3x sehari</li>
+                <li>Termasuk Akomodasi Bandara</li>
+                <li>Belum termasuk biaya tiket masuk wahana</li>
+            </ul>
+        </div>
+        <div class="col card">
+            Paket Premium
+            <ul style="text-align: left;">
+                <li>3D 2N</li>
+                <li>Termasuk Makan 3x sehari</li>
+                <li>Termasuk Akomodasi Bandara</li>
+                <li>Termasuk biaya tiket masuk wahana</li>
+                <li>Termasuk foto profesional</li>
+            </ul>
+        </div>
+        <div class="col card">
+            Paket Honeymoon
+            <ul style="text-align: left;">
+                <li>7D 6N</li>
+                <li>Termasuk Makan 3x sehari</li>
+                <li>Termasuk Akomodasi Bandara</li>
+                <li>Termasuk biaya tiket masuk wahana</li>
+                <li>Termasuk foto profesional</li>
+                <li>Free Gift Pack</li>
+            </ul>
+        </div>            
+    </div>
+
+    <p style="text-align: center;" id="contact" class="contact">~ Contact Us ~ </p>
+
+    <div class="row">
+        <!-- Begin Contact Form -->
+        <div class="col card" id="contact">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>  
+
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="interest">Interest:</label>
+                    <select id="interest" name="interest" required>
+                        <option value="">What are you interested in?</option>
+                        <option value="travel">Travel Packages</option>
+                        <option value="booking">Flight Booking</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <span class="error-message"></span>
+                </div>
+
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+        <!-- End Contact Form -->
+    </div>  
+
+        <button id="backToTopBtn" class="hidden">Back to Top</button>
+    </main>
+</div>
+
+    <!-- footer -->
+    <footer>
+        <div style="text-align: center; font-size: 12px;">
+            &copy; 2024 Travel Agent Bumi Langit
+        </div>
+        <div style="text-align: right; font-size: 12px;">
+            Developed By : Mhd. Iqbal Syahputra
+        </div>
+    </footer>
+
+    <!-- javascript -->
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+</body>
+
+</html>

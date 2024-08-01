@@ -1,0 +1,224 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+aside {
+    background-color: #a09ce1;
+    padding: 1rem;
+    max-width: 100%;
+    /* width: 250px; */
+}
+
+main {
+    /* margin-left: 270px; */
+    padding: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    clear: both;
+    /* Clear floats */
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+/* Basic layout styling */
+.container {
+    display: flex;
+    /* Use flexbox for layout */
+}
+
+.sidebar {
+    width: 250px;
+    /* Adjust width as needed */
+}
+
+.content {
+    flex: 1;
+    /* Make the content area take up remaining space */
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1;
+    min-width: 250px;
+    margin-right: 1rem;
+}
+
+.col:last-child {
+    margin-right: 0;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group.invalid input,
+.form-group.invalid textarea {
+    border-color: red;
+}
+
+.form-group.invalid .error-message {
+    display: block;
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.slider-container {
+    width: 100%;
+    height: 35%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+    /* Each slide takes up full width */
+}
+
+.slide img {
+    max-width: 100%;
+    /* Limit image width to screen width */
+    /* height: 60%;   */
+    display: block;
+}
+
+.testimonial-container {
+    width: 400px;
+    /* Adjust width as needed */
+    overflow: hidden;
+}
+
+.testimonial {
+    display: none;
+    /* Initially hide all testimonials */
+    padding: 20px;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+    /* Smooth transition effect */
+}
+
+.testimonial.active {
+    display: block;
+    opacity: 1;
+}
+
+#backToTopBtn {
+    display: none; /* Initially hidden */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#backToTopBtn.show {
+    display: block; /* Show when scrolled down */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .contact-form input,
+    .contact-form select {
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+}
